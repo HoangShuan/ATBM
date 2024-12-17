@@ -1,0 +1,33 @@
+﻿<Window x:Class="AES.Confirm"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AES"
+        mc:Ignorable="d"
+        Title="Xác nhận" Height="160" Width="254"
+        WindowStartupLocation="CenterScreen"
+        ResizeMode="NoResize">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="35px"/>
+            <RowDefinition Height="35px"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+        <Label Grid.Column="0" Grid.Row="0" Name="lbTitle"/>
+
+        <ComboBox Grid.Column="0" Grid.Row="1" Name="comboBox" VerticalContentAlignment="Center" Margin="10px 0" Height="30px">
+            <ComboBoxItem Name="cbo1" IsSelected="True"/>
+            <ComboBoxItem Name="cbo2"/>
+        </ComboBox>
+
+        <StackPanel Grid.Column="0" Grid.Row="2" Orientation="Horizontal" Background="WhiteSmoke" Margin="0,10,0,-6">
+            <Button Content="OK" Width="50" Height="20px" Name="btnOK" Background="White" Margin="115px 0 0 0" Click="btnOK_Click"/>
+            <Button Content="Cancel" Width="50" Height="20px" Click="btnCancel" Background="White" Margin="15px 0 0 0"/>
+        </StackPanel>
+    </Grid>
+</Window>

@@ -1,0 +1,69 @@
+﻿<Application x:Class="AES.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:AES"
+             StartupUri="MainWindow.xaml">
+    <Application.Resources>
+
+        <ControlTemplate x:Key="btnFile" TargetType="Button">
+            <Grid>
+                <Border x:Name="border" Background="LightSeaGreen" CornerRadius="4" BorderThickness="1" BorderBrush="Black"/>
+                <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            </Grid>
+            <ControlTemplate.Triggers>
+                <Trigger Property="IsPressed" Value="True">
+                    <Setter TargetName="border" Property="Background" Value="LightBlue"/>
+                </Trigger>
+            </ControlTemplate.Triggers>
+        </ControlTemplate>
+
+        <ControlTemplate x:Key="btnKey" TargetType="Button">
+            <Grid>
+                <Border x:Name="border" Background="LightCoral" CornerRadius="4" BorderThickness="1" BorderBrush="Black"/>
+                <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            </Grid>
+            <ControlTemplate.Triggers>
+                <Trigger Property="IsPressed" Value="True">
+                    <Setter TargetName="border" Property="Background" Value="LightBlue"/>
+                </Trigger>
+            </ControlTemplate.Triggers>
+        </ControlTemplate>
+
+        <ControlTemplate x:Key="btnMaHoa" TargetType="Button">
+            <Grid>
+                <Border x:Name="border" Background="Coral" CornerRadius="8" BorderThickness="2" BorderBrush="Black"/>
+                <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            </Grid>
+            <ControlTemplate.Triggers>
+                <Trigger Property="IsPressed" Value="True">
+                    <Setter TargetName="border" Property="Background" Value="LightBlue"/>
+                </Trigger>
+            </ControlTemplate.Triggers>
+        </ControlTemplate>
+
+        <ControlTemplate x:Key="btnGiaiMa" TargetType="Button">
+            <Grid>
+                <Border x:Name="border" Background="Green" CornerRadius="8" BorderThickness="2" BorderBrush="Black"/>
+                <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            </Grid>
+            <ControlTemplate.Triggers>
+                <Trigger Property="IsPressed" Value="True">
+                    <Setter TargetName="border" Property="Background" Value="LightBlue"/>
+                </Trigger>
+            </ControlTemplate.Triggers>
+        </ControlTemplate>
+
+        <ControlTemplate x:Key="btnXoa" TargetType="Button">
+            <Grid>
+                <Border x:Name="border" Background="red" CornerRadius="8" BorderThickness="2" BorderBrush="Black"/>
+                <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            </Grid>
+            <ControlTemplate.Triggers>
+                <Trigger Property="IsPressed" Value="True">
+                    <Setter TargetName="border" Property="Background" Value="LightBlue"/>
+                </Trigger>
+            </ControlTemplate.Triggers>
+        </ControlTemplate>
+
+    </Application.Resources>
+</Application>
